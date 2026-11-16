@@ -113,6 +113,7 @@ export default async function SellerProfilePage({ params }: { params: Promise<{ 
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#e8f0fe] dark:bg-slate-950 transition-colors">
+      
       {/* Background Decorative Blobs */}
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-300 dark:bg-blue-900/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob"></div>
       <div className="absolute top-[20%] right-[-10%] w-[30%] h-[30%] bg-indigo-300 dark:bg-indigo-900/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob animation-delay-2000"></div>
