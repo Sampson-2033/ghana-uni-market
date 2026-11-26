@@ -123,6 +123,7 @@ async function ProductData({ id, chatWith }: { id: string, chatWith?: string }) 
 export default async function ProductDetailsPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ chatWith?: string }>; }) {
   const { id } = await params;
   const { chatWith } = await searchParams;
+  
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 transition-colors">
       <Navbar />
