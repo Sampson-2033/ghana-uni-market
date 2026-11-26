@@ -46,10 +46,10 @@ async function InboxData() {
 
         return (
           <Link 
-  href={`/product/${product?.id}?chatWith=${msg.sender_id}`} 
-  key={msg.id} 
-  className="block bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 transition-colors group"
->
+            href={`/product/${product?.id}?chatWith=${msg.sender_id}`} 
+            key={msg.id} 
+            className="block bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 transition-colors group"
+          >
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden flex-shrink-0">
                 {sender?.avatar_url ? <img src={sender.avatar_url} className="w-full h-full object-cover" /> : null}

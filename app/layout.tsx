@@ -1,6 +1,6 @@
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { Toaster } from "sonner"; // <-- ADD THIS IMPORT
+import { Toaster } from "sonner";
 
 export default function RootLayout({
   children,
@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className="antialiased font-sans">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -17,7 +17,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <Toaster richColors position="top-center" /> {/* <-- ADD THIS COMPONENT */}
+          <Toaster richColors position="top-center" />
         </ThemeProvider>
       </body>
     </html>
